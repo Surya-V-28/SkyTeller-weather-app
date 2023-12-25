@@ -54,7 +54,7 @@ myDropdown.addEventListener("change", async (event) =>  {
   classForTimes.innerHTML = '';
   loaders.style.display='flex';
   nodata.style.display ='none';
- await fetch(`http://www.7timer.info/bin/api.pl?lon=${att}&lat=${lat}&product=civillight&output=json`).
+ await fetch(`https://www.7timer.info/bin/api.pl?lon=${att}&lat=${lat}&product=civillight&output=json`).
   then(response =>response.json()).then(data => {
     var temp  = data.dataseries;
     temp.forEach(element => {
