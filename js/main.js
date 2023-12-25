@@ -64,7 +64,7 @@ myDropdown.addEventListener("change", async (event) =>  {
       var cards = document.createElement('p');
       var cardsdate = document.createElement('p');
       var cardsImg = document.createElement('img');
-      cardsImg.src = `/images/${element.weather}.png`
+      cardsImg.src = `images/${element.weather}.png`
       var  date = element.date;
       date = date.toString();
       console.log(typeof date);
